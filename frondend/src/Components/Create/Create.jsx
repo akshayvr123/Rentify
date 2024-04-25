@@ -58,7 +58,7 @@ const Create = () => {
                 <card>
                     <div className="centerDiv">
                         <form onSubmit={handleSubmit}>
-                            <label htmlFor="fname">Name</label>
+                            <label htmlFor="fname">Name1</label>
                             <br />
                             <input
                                 className="input"
