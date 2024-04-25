@@ -1,0 +1,48 @@
+.Section1Conatainer{
+background-color: black;
+height: 259px;
+display: flex;
+align-items: center;
+padding-left: 5rem;
+}
+
+.left-Section{
+width: 730px;
+}
+.title{
+    color: white;
+}
+/* .right-Section{
+
+} */
+.textContainer{
+    background-color: #fcf6f6;
+
+    width: 419px;
+    height: 34px;
+    border-radius: 153px;
+    display: flex;
+}
+#Dot{
+    height: 20px;
+    width: 20px;
+    margin: 6px 6px;
+}    
+#Arrow{
+    height: 20px;
+    width: 20px;
+    margin: 6px 6px;
+}
+.locationSearch{
+    outline: none;
+    border: none;
+    width: 30rem;
+    font-size: 15px;
+    background-color: transparent;
+    color: 898989;
+    padding: 7px;
+}
+hr{
+    height: 5px;
+    background-color: rgb(255, 249, 249);
+}

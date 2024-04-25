@@ -1,0 +1,39 @@
+.FooterContainer{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 4rem 10rem;
+    gap: 13rem;
+}
+
+.FooterContainer a{
+    text-decoration: none;
+    color: white;
+}
+
+.FooterContainer .list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#footer_line{
+    height: 5px;
+    width: 10rem;
+    background-color: rgb(247, 246, 246);
+}
+
+.SocialMediaContainer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 3rem;
+
+}
+
+.SocialMediaContainer .Icons a{
+    padding: 1rem 2rem;
+}

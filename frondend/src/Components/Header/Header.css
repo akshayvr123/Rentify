@@ -1,0 +1,95 @@
+.navbar {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    background-color: white;
+    color: black;
+    /* border: 1px solid red; */
+    padding-left: 5rem;
+}
+
+.navbar .leftSection {
+    width: 221px;
+}
+
+.navbar .middleSection {
+    width: 900px;
+}
+
+.textConatainer {
+    background-color: #D9D9D9;
+
+    width: 419px;
+    height: 34px;
+    border-radius: 153px;
+    display: flex;
+}
+
+.productSearch {
+    outline: none;
+    border: none;
+    width: 30rem;
+    font-size: 15px;
+    background-color: transparent;
+    color: 898989;
+    padding: 7px;
+
+}
+#imgSearch{
+    color: white;
+    background-color: white;
+}
+
+.productSearch::placeholder {
+    color: #898989;
+}
+
+.navbar .rightSection {
+    width: 318px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+#plus {
+    font-size: 18px;
+    font-weight: bold;
+    width: 84px;
+    height: 38px;
+    border-radius: 22.5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+   
+}
+
+.rightSection a{
+    text-decoration: none;
+}
+.rightSection a:hover{
+    text-decoration:underline;
+}
+
+.login {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+#btn{
+    width: 84px;
+    height: 38px;
+    border-radius: 22.5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: white;
+    color: black;
+
+}
+
