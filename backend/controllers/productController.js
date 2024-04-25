@@ -84,5 +84,29 @@ const getCategory=asyncHandler(async(req,res)=>{
         console.log("No category exist");
     }
 })
+const getAllProduct = asyncHandler(async (req, res) => {
+    try {
+      // Find all documents where the products array is not empty
+      const allCategories = await Product.find({ 'products': { $exists: true, $not: { $size: 0 } } });
+  
+      // Flatten the products array from all categories
+      const allProducts = allCategories.reduce((accumulator, category) => {
+        accumulator.push(...category.products);
+        return accumulator;
+      }, []);
+  
+      // Respond with the flattened array of products
+      res.status(200).json(allProducts);
+    } catch (error) {
+      // Handle errors
+      console.error('Error retrieving products:', error);
+      // Respond with an appropriate error message
+      res.status(500).json({ message: 'Error retrieving products' });
+    }
+  });
+  
+  // Usage: Assuming this function is called within an Express route handler
+  // The response will contain a JSON array of all products from all categories
+  
 
-module.exports = { addProduct,getCategory };
+module.exports = { addProduct,getCategory,getAllProduct };
